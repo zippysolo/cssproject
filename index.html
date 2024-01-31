@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>All About John</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #962ae6;
+        }
+
+        nav {
+            background-color: #200e3d;
+            padding: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            position: fixed;
+            top: 5px;
+            width: 100%;
+        }
+
+        a {
+            background-color: #200e3d;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        a:hover {
+            color: #52c5ff;
+        }
+
+        #imgjohn {
+            width: 50%;
+            display: block;
+            margin: auto;
+            margin-top: 10%;
+            padding: 20px;
+        }
+
+        .imgabout {
+            width: 80%;
+        }
+
+        .imgkids,
+        .imgfamily {
+            width: 90%;
+
+        }
+
+        .divjohn {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .divaboutparent {
+            display: flex;
+            border: 15px solid rgb(255 114 114 / 80%);
+            width: 60%;
+            padding: 35px;
+            margin: auto;
+        }
+
+        .backwhite {
+            background-color: white;
+        }
+
+        .divaboutimg {
+            flex-basis: 30%;
+            align-self: center;
+        }
+
+        .divabouttext {
+            flex-basis: 60%;
+        }
+
+        .divprojectsparent {
+            display: flex;
+            justify-content: center;
+        }
+
+        .divprojects {
+            text-align: center;
+            width: 40%;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 25px;
+
+        }
+
+        .headingprojects {
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            color: #1d3d5f;
+        }
+
+        form {
+            background-color: rgba(3, 3, 3, 45%);
+        }
+
+        footer {
+            background-color: #1f2027;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="divjohn">
+        <img id="imgjohn" src="images/john.jpeg" alt="Picture of John">
+        <p> Hi! I'm John I love to code and make websites!</p>
+    </div>
+    <div class="divaboutparent backwhite">
+        <div class="divaboutimg"><img class="imgabout" src="images/john-aboutme - .jpeg"
+                alt="Picture of John at Computer"></div>
+        <div class="divabouttext">
+            <h2> About Me</h2>
+            <p>My name is John Smith and I love what I do. I love making websites. I was introduced to the field ten
+                years ago when I came across a CompuSkills ad.</p>
+            <p>I soon learned that web development was a very lucrative career choice, so I took the Web Development
+                Course. Today, I couldn't be heappier with that decision.</p>
+            <p>Checkout some of the projects I've done below </p>
+        </div>
+    </div>
+
+    <h2 class="headingprojects">Projects</h2>
+    <div class="divprojectsparent">
+        <div class="backwhite divprojects">
+            <img class="imgkids" src="images/kids.jpeg" alt="friends">
+            <h2>Friends</h2>
+            <p>An HTML project about things to do with friends.</p>
+            <p>View Project</p>
+        </div>
+        <div class="backwhite divprojects">
+            <img class="imgfamily backwhite" src="images/family.png" alt="friends">
+            <h2>Family</h2>
+            <p>An HTML project about some facts about family.</p>
+            <p>View Project</p>
+        </div>
+    </div>
+
+    <div class="divcontact">
+        <h2 id="contact">Contact</h2>
+        <p>Use this form to get in touch. I would love to hear from you!</p>
+        <form action="">
+            <div>
+                <div><label for="fullname">Name</label></div>
+                <div><input type="text" id="fullname" name="fullname" minlength="5" maxlength="25" required
+                        placeholder="Your Name"></div>
+                <div><label for="subject">Subject</label></div>
+                <div><input type="text" id="subject" name="subject" minlength="5" maxlength="20" required
+                        placeholder="Reason for your"></div>
+                <div><label for="email">Email</label></div>
+                <div><input type="email" id="email" name="email" required placeholder="Your email"></div>
+            </div>
+            <div>
+                <div><label for="message"></label></div>
+                <div><textarea name="message" id="message" cols="30" rows="15"></textarea></div>
+            </div>
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>This site is &copy 2022 Leora Waldman</p>
+    </footer>
+</body>
+
+</html>
