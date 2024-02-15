@@ -35,21 +35,20 @@ a:hover {
 }
 
 #imgjohn {
-    width: 70%;
-
+    width: 35%;
     margin: auto;
     margin-top: 10%;
-    padding: 20px;
 }
 
 .imgabout {
-    width: 100%;
+    width: 60%;
+    justify-self: center;
+    align-self: center;
 }
 
 .imgkids,
 .imgfamily {
     width: 95%;
-
 }
 
 .divjohn {
@@ -58,6 +57,8 @@ a:hover {
 }
 
 .divaboutparent {
+    display: flex;
+    flex-direction: column;
     border: 15px solid rgb(255 114 114 / 80%);
     width: 90%;
     padding: 35px;
@@ -69,7 +70,9 @@ a:hover {
 }
 
 .divprojectsparent {
-    margin: 0px 0px 100px 0px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .divprojects {
@@ -105,10 +108,6 @@ a:hover {
     padding: 30px 0px;
 }
 
-.parentcontactinput {
-    width: 95%;
-    margin: auto;
-}
 
 footer {
     background-color: #1f2027;
@@ -128,9 +127,11 @@ footer {
 
 
 .parentcontactinput {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     padding: 5px;
-
+    width: 95%;
+    margin: auto;
 }
 
 input[type="text"],
@@ -148,7 +149,6 @@ input[type="email"] {
     height: 50px;
 }
 
-
 textarea {
     height: 206px;
 }
@@ -157,19 +157,13 @@ label {
     padding: 0px 20px;
 }
 
-
-
 .purpletext {
     color: #a198a5;
 }
 
-
-.contactinfo1,
-.contactinfo2 {
-    flex-grow: 1;
+.contactinfochild {
+    /*  flex-grow: 1;*/
     color: #a198a5;
-
-    /* border: 2px solid;*/
 }
 
 #submitbutton {
@@ -190,41 +184,44 @@ label {
     text-align: right;
 }
 
-
-
-
 @media screen and (min-width: 630px) {
-
     .divprojects {
+        /* reduce project size slightly  */
         width: 60%;
+        /* adjust padding to reduce white space at bottom  */
+        padding: 20px 10px;
     }
 }
 
 @media screen and (min-width: 910px) {
-    .divprojectsparent {
-        display: flex;
-        justify-content: center;
-    }
+    /*  reduce 'project' size further
+        change 'about' section and 'contact' section to row  
+        adjust padding 
+    */
 
     .divprojects {
-        margin: 20px;
-        width: 40%;
+        width: 55%;
+
     }
 
     .parentcontactinput {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contactinfochild {
+        flex-grow: 1;
     }
 
     .divaboutparent {
-        display: flex;
+        flex-direction: row;
     }
 
     .divaboutimg {
-        flex-basis: 30%;
-        align-self: center;
+
+        flex-basis: 40%;
         padding: 20px;
+
     }
 
     .divabouttext {
@@ -232,10 +229,8 @@ label {
         padding: 10px;
     }
 
-    .contactinfo1,
-    .contactinfo2 {
+    .contactinfochild {
         padding: 10px;
-
     }
 
     #submitbutton {
@@ -246,13 +241,31 @@ label {
 
 @media screen and (min-width: 1200px) {
 
-    .divprojects {
-        flex-basis: 30%;
+    /*
+    change project section to row
+    adjust size and padding of different sections
+  */
+    .divprojectsparent {
+        flex-direction: row;
+        justify-content: center;
     }
 
+    .divprojects {
+        /*
+        reduce size and also adjust margin to override margin: auto 
+        */
+        flex-basis: 30%;
+        margin: 40px 20px;
+    }
 
+    form {
+        /* reduce size and center */
+        width: 80%;
+        margin: auto;
+    }
 
     #submitbutton {
-        margin: 20px 3vw;
+        /* adjust margins so that it lines up */
+        margin: 20px 2.5vw;
     }
 }
