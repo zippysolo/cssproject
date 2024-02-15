@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #962ae6;
+    font-family: "Work Sans", sans-serif;
+}
+
+.heading {
+    font-family: "Days One", sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+nav {
+    background-color: #200e3d;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    top: 5px;
+    width: 100%;
+}
+
+a {
+    background-color: #200e3d;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+a:hover {
+    color: #52c5ff;
+}
+
+#imgjohn {
+    width: 70%;
+
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+.imgabout {
+    width: 100%;
+}
+
+.imgkids,
+.imgfamily {
+    width: 95%;
+
+}
+
+.divjohn {
+    font-weight: bold;
+    text-align: center;
+}
+
+.divaboutparent {
+    border: 15px solid rgb(255 114 114 / 80%);
+    width: 90%;
+    padding: 35px;
+    margin: 55px auto;
+}
+
+.backwhite {
+    background-color: white;
+}
+
+.divprojectsparent {
+    margin: 0px 0px 100px 0px;
+}
+
+.divprojects {
+    width: 75%;
+    padding: 20px 10px 80px 10px;
+    margin: 40px auto;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.headingprojects {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.projectbutton {
+    border: solid 3px lightblue;
+    border-radius: 25px;
+    color: #962ae6;
+}
+
+.projectbutton:hover {
+    color: white;
+    font-weight: bold;
+    background-color: lightblue;
+
+}
+
+.divcontact {
+    background-color: rgba(3, 3, 3, 45%);
+    padding: 30px 0px;
+}
+
+.parentcontactinput {
+    width: 95%;
+    margin: auto;
+}
+
+footer {
+    background-color: #1f2027;
+    color: white;
+    padding: 10px 50px;
+}
+
+.h2contact {
+    color: white;
+}
+
+.divcontacttop {
+    text-align: center;
+    padding: 30px 5px;
+}
+
+
+
+.parentcontactinput {
+    margin: auto;
+    padding: 5px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin: 5px;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+
+input[type="text"],
+input[type="email"] {
+    height: 50px;
+}
+
+
+textarea {
+    height: 206px;
+}
+
+label {
+    padding: 0px 20px;
+}
+
+
+
+.purpletext {
+    color: #a198a5;
+}
+
+
+.contactinfo1,
+.contactinfo2 {
+    flex-grow: 1;
+    color: #a198a5;
+
+    /* border: 2px solid;*/
+}
+
+#submitbutton {
+    color: #1d3d5f;
+    background-color: lightblue;
+    padding: 10px 30px;
+    margin: 20px 3vw;
+    border-radius: 5px;
+}
+
+#submitbutton:hover {
+    color: white;
+    background-color: black;
+}
+
+#submitdiv {
+    width: 100%;
+    text-align: right;
+}
+
+
+
+
+@media screen and (min-width: 630px) {
+
+    .divprojects {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 910px) {
+    .divprojectsparent {
+        display: flex;
+        justify-content: center;
+    }
+
+    .divprojects {
+        margin: 20px;
+        width: 40%;
+    }
+
+    .parentcontactinput {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .divaboutparent {
+        display: flex;
+    }
+
+    .divaboutimg {
+        flex-basis: 30%;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .divabouttext {
+        flex-basis: 60%;
+        padding: 10px;
+    }
+
+    .contactinfo1,
+    .contactinfo2 {
+        padding: 10px;
+
+    }
+
+    #submitbutton {
+        margin: 20px 3vw;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .divprojects {
+        flex-basis: 30%;
+    }
+
+
+
+    #submitbutton {
+        margin: 20px 3vw;
+    }
+}
